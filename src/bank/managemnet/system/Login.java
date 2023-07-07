@@ -2,8 +2,9 @@ package bank.managemnet.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
-public class Login extends JFrame {
+public class Login extends JFrame implements ActionListener {
     
     Login() {
         
@@ -43,26 +44,30 @@ public class Login extends JFrame {
         
         
         JButton signIn = new JButton("SIGN IN");
-        signIn.setBounds(250,300,90,25);
+        signIn.setBounds(250,300,100,30);
         signIn.setBackground(Color.BLACK);
         signIn.setForeground(Color.white);
         add(signIn);
         
         JButton clear = new JButton("CLEAR");
-        clear.setBounds(410,300,90,25);
+        clear.setBounds(400,300,100,30);
         clear.setBackground(Color.BLACK);
         clear.setForeground(Color.white);
         add(clear);
         
-        JButton logIn = new JButton("LOG IN");
-        logIn.setBounds(330,350,90,25);
-        logIn.setBackground(Color.BLACK);
-        logIn.setForeground(Color.white);
-        add(logIn);
+        JButton signUp = new JButton("SIGN UP");
+        signUp.setBounds(250,350,250,30);
+        signUp.setBackground(Color.BLACK);
+        signUp.setForeground(Color.white);
+        add(signUp);
         
         setSize(800,480);
         setVisible(true);
         setLocation(350,200);
+    }
+    
+    public void actionPerformed(ActionEvent ae) {
+        
     }
     
     public static void main(String[] args) {
