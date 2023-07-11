@@ -21,10 +21,12 @@ public class Signup0 extends JFrame {
         formnum.setBounds(150,20,500,40);
         add(formnum);
         
+        
         JLabel personalinfo = new JLabel("Page 1 : Personal Details");
         personalinfo.setFont(new Font("Aerial",Font.BOLD,23));
         personalinfo.setBounds(250,90,300,40);
         add(personalinfo);
+        
         
         JLabel name = new JLabel("Name : ");
         name.setFont(new Font("Aerial",Font.BOLD,17));
@@ -36,6 +38,7 @@ public class Signup0 extends JFrame {
         nameTextField.setBounds(300,210,350,23);
         add(nameTextField);
         
+        
         JLabel fname = new JLabel("Father's Name : ");
         fname.setFont(new Font("Aerial",Font.BOLD,17));
         fname.setBounds(90,250,300,40);
@@ -46,13 +49,14 @@ public class Signup0 extends JFrame {
         fnameTextField.setBounds(300,260,350,23);
         add(fnameTextField);
         
+        
         JLabel dob = new JLabel("Date Of Birth : ");
         dob.setFont(new Font("Aerial",Font.BOLD,17));
         dob.setBounds(90,300,300,40);
         add(dob);
         
         JDateChooser datechooser = new JDateChooser();
-        datechooser.setBounds(300,310,200,23);
+        datechooser.setBounds(300,310,350,23);
         add(datechooser);
         
         
@@ -60,6 +64,20 @@ public class Signup0 extends JFrame {
         gen.setFont(new Font("Aerial",Font.BOLD,17));
         gen.setBounds(90,350,300,40);
         add(gen);
+        
+        JRadioButton maleRB = new JRadioButton("Male");
+        maleRB.setBounds(300,360,80,23);
+        maleRB.setBackground(Color.white);
+        add(maleRB);
+        
+        JRadioButton femaleRB = new JRadioButton("Female");
+        femaleRB.setBounds(500,360,80,23);
+        femaleRB.setBackground(Color.white);
+        add(femaleRB);
+        
+        ButtonGroup gendergrp = new ButtonGroup();
+        gendergrp.add(maleRB);
+        gendergrp.add(femaleRB);
         
         JLabel email = new JLabel("Email : ");
         email.setFont(new Font("Aerial",Font.BOLD,17));
@@ -71,10 +89,26 @@ public class Signup0 extends JFrame {
         emailTextField.setBounds(300,410,350,23);
         add(emailTextField);
         
+        
         JLabel marital = new JLabel("Marital Status : ");
         marital.setFont(new Font("Aerial",Font.BOLD,17));
         marital.setBounds(90,450,300,40);
         add(marital);
+        
+        JRadioButton marriedRB = new JRadioButton("Married");
+        marriedRB.setBounds(300,460,80,23);
+        marriedRB.setBackground(Color.white);
+        add(marriedRB);
+        
+        JRadioButton unmarriedRB = new JRadioButton("Unmarried");
+        unmarriedRB.setBounds(500,460,100,23);
+        unmarriedRB.setBackground(Color.white);
+        add(unmarriedRB);
+        
+        ButtonGroup maritalgrp = new ButtonGroup();
+        maritalgrp.add(marriedRB);
+        maritalgrp.add(unmarriedRB);
+        
         
         JLabel address = new JLabel("Address : ");
         address.setFont(new Font("Aerial",Font.BOLD,17));
@@ -86,6 +120,7 @@ public class Signup0 extends JFrame {
         addressTextField.setBounds(300,510,350,23);
         add(addressTextField);
         
+        
         JLabel city = new JLabel("City : ");
         city.setFont(new Font("Aerial",Font.BOLD,17));
         city.setBounds(90,550,300,40);
@@ -95,6 +130,7 @@ public class Signup0 extends JFrame {
         cityTextField.setFont(new Font("Aerial",Font.BOLD,14));
         cityTextField.setBounds(300,560,350,23);
         add(cityTextField);
+        
         
         JLabel pincode = new JLabel("Pin Code : ");
         pincode.setFont(new Font("Aerial",Font.BOLD,17));
