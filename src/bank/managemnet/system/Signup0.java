@@ -52,7 +52,8 @@ public class Signup0 extends JFrame {
         add(dob);
         
         JDateChooser datechooser = new JDateChooser();
-        datechooser.setBounds(300,310,300,40);
+        datechooser.setBounds(300,310,200,23);
+        add(datechooser);
         
         
         JLabel gen = new JLabel("Gender : ");
