@@ -143,6 +143,12 @@ public class Signup0 extends JFrame {
         add(pincodeTextField);
         
         
+        JButton nextpage = new JButton("Next");
+        nextpage.setBounds(570,660,80,23);
+        nextpage.setBackground(Color.black);
+        nextpage.setForeground(Color.white);
+        add(nextpage);
+        
         getContentPane().setBackground(Color.white);
         
         setSize(850,800);
